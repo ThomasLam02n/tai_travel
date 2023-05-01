@@ -9,6 +9,7 @@ body {
 
 .myApp {
     padding: 0;
+    position: relative;
 }
 
 
@@ -29,6 +30,7 @@ body {
 .background__header::after {
     content:"";
     position: absolute;
+    height: 100vh;
     top: 0;
     right: 0;
     left: 0;
@@ -41,6 +43,7 @@ body {
     border-bottom: 1px solid var(--white-color);
     position: fixed;
     top: 0px;
+    transition: 2s;
     right: 0;
     left: 0;
     border-radius: 2px;
@@ -336,7 +339,9 @@ body {
 }
 
 .location__heading {
-    font-size: 3.5rem;
+    font-size: 6.5rem;
+    font-weight: 640;
+    margin-top: 0;
 }
 
 .location__info {
@@ -352,16 +357,17 @@ body {
 }
 
 .location__link {
-    margin-right: 6px;
+    margin-right: 4px;
 }
 
 .location__item {
-    margin-top: 4px;
+    margin: 4px 0px 44px 0px;
     width: 100%;
     height: 350px;
     position: relative;
-    border-radius: 2px;
+    border-radius: 4px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .location__item::after {
@@ -486,10 +492,11 @@ body {
 }
 
 .reviewer__title {
-    font-size: 2.5rem !important;
+    font-size: 4.5rem !important;
+    font-weight: 640;
     width: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 16px;
 }
 
 .reviewer-item {
@@ -516,7 +523,7 @@ body {
 }
 
 .reviewer-content-name {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -800,7 +807,7 @@ body {
     position: absolute;
     bottom: 20px;
     left: 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--white-color);
     width: 196px;
@@ -829,7 +836,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     color: #eda84a;
-    line-height: 25px;
+    line-height: 30px;
     margin-right: 5px;
 }
 
@@ -840,13 +847,13 @@ body {
 
 .offers__available-review-rate-letter {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 650;
     color: #000;
 }
 
 .offers__available-review-rate-quality {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #a5a5a5;
 }

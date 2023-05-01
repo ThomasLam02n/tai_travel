@@ -35,7 +35,7 @@
 <body>
     <div class="container-fluid myApp">
         <div id="navbar" class="background__header" style="background-image: url('./assets/img/firstpage.jpg');">
-            <div class="raw navbar">
+            <div class="raw navbar" id="header-cover">
                 <div class="col-3">
                     <ul class="navbar__list">
                         <li class="navbar__item navbar__item-title">
@@ -181,7 +181,7 @@
                                             Offers
                                         </li>
                                     </a>
-                                    <a href="/booking.php" class="mobile__navbar-item-link">
+                                    <a href="booking.html" class="mobile__navbar-item-link">
                                         <li class="mobile__navbar-item">
                                             Booking
                                         </li>
@@ -308,7 +308,7 @@
                 </div>
             </div>
             <div class="container row mobile-navbar-calendar">
-                <div class="col-md-8 navbar__calendar-item">
+                <div class="col-md-8 col-sm-12 navbar__calendar-item">
                     <span class="navbar__calendar-label">
                         People
                         <i class="fa-solid fa-person navbar__calendar-item-icon"></i>
@@ -325,7 +325,7 @@
                         </div>
                     </span>
                 </div>
-                <div class="col-md-8 navbar__calendar-item">
+                <div class="col-md-8 col-sm-12 navbar__calendar-item">
                     <span class="navbar__calendar-label">
                         Time
                         <i class="fa-solid fa-clock navbar__calendar-item-icon"></i>
@@ -342,7 +342,7 @@
                         </div>
                     </span>
                 </div>
-                <div class="col-md-8 navbar__calendar-item">
+                <div class="col-md-8 col-sm-12 navbar__calendar-item">
                     <span class="navbar__calendar-label">
                         Hotel
                         <i class="fa-solid fa-hotel navbar__calendar-item-icon"></i>
@@ -359,7 +359,7 @@
                         </div>
                     </span>
                 </div>
-                <div class="col-md-8 navbar__calendar-item">
+                <div class="col-md-8 col-sm-12 navbar__calendar-item">
                     <span class="navbar__calendar-label">
                         Traffic
                         <i class="fa-solid fa-plane-departure navbar__calendar-item-icon"></i>
@@ -376,7 +376,7 @@
                         </div>
                     </span>
                 </div>
-                <div class="col-md-8 navbar__calendar-item">
+                <div class="col-md-8 col-sm-12 navbar__calendar-item">
                     <span class="navbar__calendar-label">
                         Date
                         <i class="fa-solid fa-calendar-days navbar__calendar-item-icon"></i>
@@ -393,7 +393,7 @@
                         </div>
                     </span>
                 </div>
-                <div class="col-md-8 navbar__calendar-item navbar__calendar-item-search">
+                <div class="col-md-8 col-sm-12 navbar__calendar-item navbar__calendar-item-search">
                     <i class="fa-solid fa-magnifying-glass navbar__calendar-item-icon"></i>
                     Search
                 </div>
@@ -407,7 +407,7 @@
                 <div class="col-12 location__info">
                     <ul class="location__list">
                         <a href="offers.html" class="location__link">
-                            <li class="location__item">
+                            <li class="location__item shine-box">
                                 <div class="location__item-img"
                                     style="background-image: url('assets/img/japan_location.jpg');">
                                 </div>
@@ -422,7 +422,7 @@
                             </li>
                         </a>
                         <a href="offers.html" class="location__link">
-                            <li class="location__item">
+                            <li class="location__item shine-box">
                                 <div class="location__item-img"
                                     style="background-image: url('assets/img/italia_location.jpg') ;">
                                 </div>
@@ -437,7 +437,7 @@
                             </li>
                         </a>
                         <a href="offers.html" class="location__link">
-                            <li class="location__item">
+                            <li class="location__item shine-box">
                                 <div class="location__item-img"
                                     style="background-image: url('assets/img/france_location.jpg') ;">
                                 </div>
@@ -452,7 +452,7 @@
                             </li>
                         </a>
                         <a href="offers.html" class="location__link">
-                            <li class="location__item">
+                            <li class="location__item shine-box">
                                 <div class="location__item-img"
                                     style="background-image: url('assets/img/russia_location.jpg') ;">
                                 </div>
@@ -467,7 +467,7 @@
                             </li>
                         </a>
                         <a href="offers.html" class="location__link">
-                            <li class="location__item">
+                            <li class="location__item shine-box">
                                 <div class="location__item-img"
                                     style="background-image: url('assets/img/vietnam_location.jpg') ;">
                                 </div>
@@ -482,7 +482,7 @@
                             </li>
                         </a>
                         <a href="offers.html" class="location__link">
-                            <li class="location__item">
+                            <li class="location__item shine-box">
                                 <div class="location__item-img"
                                     style="background-image: url('assets/img/santorini_location.jpg') ;">
                                 </div>
@@ -497,7 +497,7 @@
                             </li>
                         </a>
                         <a href="offers.html" class="location__link">
-                            <li class="location__item">
+                            <li class="location__item shine-box">
                                 <div class="location__item-img"
                                     style="background-image: url('assets/img/belgium_location.jpg') ;">
                                 </div>
@@ -512,7 +512,7 @@
                             </li>
                         </a>
                         <a href="offers.html" class="location__link">
-                            <li class="location__item">
+                            <li class="location__item shine-box">
                                 <div class="location__item-img"
                                     style="background-image: url('assets/img/England.jpg') ;">
                                 </div>
@@ -678,7 +678,7 @@
                         believable.
                     </p>
                 </div>
-                <div class="mobile__footer-content">
+                <div class="mobile__footer-content d-lg-none">
                     <div class="footer__heading-intro">
                         <i class="footer__heading-icon fa-brands fa-canadian-maple-leaf"></i>
                         <span class="footer__heading-title">Tai Travel</span>
@@ -842,6 +842,7 @@
     <script src="assets/JS/slider.js"></script>
     <script src="assets/JS/btn.js"></script>
     <script src="assets/JS/login.js"></script>
+    <script src="assets/JS/hiddenNavbar.js"></script>
 </body>
 
 </html>

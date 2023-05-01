@@ -4,13 +4,17 @@
         display: none;
     }
 
-    .mobile__footer-content {
+    .b__footer-content {
         display: none;
     }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1180px) {
+    .navbar__item {
+        font-size: 1.8rem;
+    }
+
     .navbar__item-download {
         position: absolute;
         top: calc(100% + 5px);
@@ -32,10 +36,10 @@
         display: block;
         display: flex;
         justify-content: center;
-        position: relative;
-        top: -20%;
+        position: absolute;
+        top: 67%;
         z-index: 2;
-        margin: auto;
+        margin: 0px 6%;
         padding: 0;
     }
 
@@ -60,7 +64,7 @@
 
     /* location */
     .location {
-        padding-top: 160px;
+        padding-top: 40px;
     }
 
     .location__item {
@@ -149,6 +153,10 @@
         display: none;
     }
 
+    .navbar__item {
+        font-size: 1.8rem;
+    }
+
     .mobile__navbar {
         display: block;
     }
@@ -221,8 +229,8 @@
     }
 
     .mobile-navbar-calendar {
-        position: relative;
-        top: -20%;
+        position: absolute;
+        top: 80%;
         z-index: 2;
         margin: 0;
         padding: 0;
@@ -254,11 +262,24 @@
     }
 
     .location {
-        padding-top: 300px;
+        padding-top: 280px;
+    }
+
+    .location__heading {
+        font-size: 3.8rem;
     }
 
     .location__item {
         margin-left: 1px;
+    }
+
+    /* reviewer */
+    .reviewer__title {
+        font-size: 3.4rem !important;
+    }
+
+    .reviewer__slider  {
+        margin-top: 30px;
     }
 
     /* Footer-info */
@@ -301,6 +322,10 @@
     .offers__available-content {
         margin: 8px 0;
         padding: 0 0 70px 0;
+    }
+
+    .offers__selection {
+        margin-left: 8px;
     }
 
     .offers__available {
